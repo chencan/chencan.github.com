@@ -1,1 +1,5 @@
-test
+2012.8.6
+debugDescription是什么？
+它是iOS5.0新加入的NSObject方法：
+print-object actually calls the debugDescription method of the specified object. NSObject implements this method by calling through to the description method. Thus, by default, an object's debug description is the same as its description. However, you can override debugDescription if you want to decouple these; many Cocoa objects do this.
+Curiously, the debugDescription method is not declared in any header.
