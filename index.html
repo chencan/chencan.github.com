@@ -1,9 +1,11 @@
-2012.8.6
-debugDescription是什么？
-它是iOS5.0新加入的NSObject方法：
-print-object actually calls the debugDescription method of the specified object. NSObject implements this method by calling through to the description method. Thus, by default, an object's debug description is the same as its description. However, you can override debugDescription if you want to decouple these; many Cocoa objects do this.
-Curiously, the debugDescription method is not declared in any header.
-
-2.12.8.14
-Categories有减小内存占用的作用
-Categories关注的重心是代码设计，把不同功能的方法分离开。在Objc里因为Categories是runtimes级别的特性，所以这种分离不仅体现在源码结构上，同时体现在运行时过程中。这意味着一个category里的方法在程序运行中如果没有被调用，那么它就不会被加载到内存中。所以合理的使用categories会减少你的程序内存消耗。
+---
+layout: default
+title: 我的Blog
+---
+<h2>{{ page.title }}</h2>
+<p>最新文章</p>
+<ul>
+{% for post in site.posts %}
+<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
