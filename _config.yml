@@ -17,6 +17,8 @@ author :
   github : chencan
   twitter : 
   feedburner : 
+  gravatar:
+    url: http://en.gravatar.com/userimage/48138816/9fb2a731c3a5a294a29c8639aa202eb2.jpg
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
