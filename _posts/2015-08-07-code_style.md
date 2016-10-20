@@ -39,7 +39,7 @@ author: 陈灿
 
 ## Tools
 
-###VVDocumenter-Xcode
+### VVDocumenter-Xcode
 [VVDocumenter-Xcode](https://github.com/onevcat/VVDocumenter-Xcode)是一个帮我们写注释（用于生成文档）的Xcode插件。可以使用[Alcatraz Xcode package manager](http://alcatraz.io)安装后重启Xcode。
 
 ### clang-format
@@ -49,7 +49,7 @@ author: 陈灿
 4. chmod +x pre-commit
 5. Change [.clang-format](https://github.com/chencan/wonderful-objective-c-style-guide/blob/master/clang-format) if you want to change the style.
 
-###Cocoapods
+### Cocoapods
 
 当需要一些“轮子”时，可以先在现有的代码里面找找（Podfile或者Libraray）。没有的话，再用pod search或者github找找，看有没有代码质量高的、大家广泛使用的（watch、star、fork数量多）、比较活跃、比较友好的第三方代码，看看实现原理以及使用方法，是否适合我们的需求。
 
@@ -64,14 +64,14 @@ Podfile.lock 有变动表示使用的第三库版本有变化，如果采用新�
 但发包前对此文件的修改要多尤其小心。最好发完包后，自己看看新版本有无问题，如果有必要再让测试看看。   
 
 
-####Cocoapods命令解释
+#### Cocoapods命令解释
 * pod update: Updating local specs repositories,  更新工程中的第三方库
 * pod update --no-repo-update：使用local specs repositories中最新的版本
 * pod install: Updating local specs repositories,  安装podfile.lock中规定版本
 * pod install --no-repo-update：当podfile.lock中规定的版本，不在local specs repositories中，install会失败  
 
 
-####Cocoapods使用规范
+#### Cocoapods使用规范
 * pod update命令，由小组某个成员，开启定时任务：  
   30 12 * * 1 cd /Users/Can/Workspace/zuche;pod update;  
   //用来检查第三方库是否有更新，并升级库。这个是为了定期检查第三方库是否有新版本。  
