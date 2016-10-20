@@ -9,7 +9,7 @@ author: 陈灿
 
 
 
-#iOS 多尺寸屏幕适配背景知识
+# iOS 多尺寸屏幕适配背景知识
 
 
 iDevice设备屏幕大小，在iPhone 6和iPhone Plus出现后，iPhone界面设计和开发面临了新的任务，即对不同设备屏幕进行适配。  
@@ -25,7 +25,7 @@ iDevice设备屏幕大小，在iPhone 6和iPhone Plus出现后，iPhone界面设
 稍后的更新会有详尽的补充。
 
 
-##相关术语
+## 相关术语
 * Point  
  Point可以理解为***iOS程序员***眼中的大小单位。它是iOS操作系统中的抽象的概念。
  >At the beginning, coordinates of all drawings are specified in points.
@@ -53,7 +53,7 @@ iDevice设备屏幕大小，在iPhone 6和iPhone Plus出现后，iPhone界面设
 Point和Rendered Pixels是我们需要关心的，Point是开发人员在Coding时，屏幕的逻辑大小单位，Rendered Pixels是设计师出图的大小单位。
  
 
-##目前需要支持的所有尺寸
+## 目前需要支持的所有尺寸
 | Point     | Rendered Pixels	| iDevice 		| Ratio
 | :-------- | :-------- | :-------- | :-------- | 
 | 320 * 480 | 320 * 480	(1x)	| iPhone3和3gs	| 1.5
@@ -69,7 +69,7 @@ Point和Rendered Pixels是我们需要关心的，Point是开发人员在Coding�
 >Note: 如果你不进行适配，iOS也会自动帮你适配，但它只是简单的缩放，会导致UIKit控件模糊（如果提供了适配的图片，图不会模糊）。
 
 
-##适配需要做的工作
+## 适配需要做的工作
 
 本来对于不同的屏幕大小，我们应该分别进行设计和开发，比如在Auto layout出现之前，经常会用代码判断设备类型，然后将控件设置成不同的大小或位置。
 
@@ -116,7 +116,7 @@ NSString *imageName = [NSString stringWithFormat:@"image-%@", screenWidth];
 UIImage *image = [UIImage imageNamed:imageName];
 </code></pre>
 
-###参考
+### 参考
 [Adaptive your user interface](https://developer.apple.com/design/adaptivity/)  
 [poster_iphones](http://chencan.github.io/attachment/poster_iphones.pdf)  
 [iPhone 6/6 Plus 出现后，如何改进工作流以实现一份设计稿支持多个尺寸？](http://www.cocoachina.com/design/20140915/9617.html)  
