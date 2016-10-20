@@ -84,8 +84,8 @@ Point和Rendered Pixels是我们需要关心的，Point是开发人员在Coding�
 Bad sample:  
 <img src="../attachment/iOS_multi_screen/4196_140915090929_1.jpg">  
 
-Good sample:  
-![](../attachment/iOS_multi_screen/4196_140915091053_1.jpg)
+//Good sample:  
+[](../attachment/iOS_multi_screen/4196_140915091053_1.jpg)
 
 Good sample相比Bad sample，将上部分的空间都等比例放大了。
 
