@@ -82,7 +82,7 @@ Point和Rendered Pixels是我们需要关心的，Point是开发人员在Coding�
 
 我们举个例子，说说什么样的适配原则是好的。    
 Bad sample:  
-![](../attachment/iOS_multi_screen/4196_140915090929_1.jpg)  
+<img src="../attachment/iOS_multi_screen/4196_140915090929_1.jpg">  
 
 Good sample:  
 ![](../attachment/iOS_multi_screen/4196_140915091053_1.jpg)
