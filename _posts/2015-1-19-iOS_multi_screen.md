@@ -82,10 +82,10 @@ Point和Rendered Pixels是我们需要关心的，Point是开发人员在Coding�
 
 我们举个例子，说说什么样的适配原则是好的。    
 Bad sample:  
-![](attachment/iOS_multi_screen/4196_140915090929_1.jpg)
+![](http://chencan.github.io/attachment/iOS_multi_screen/4196_140915090929_1.jpg)
 
 Good sample:  
-![](attachment/iOS_multi_screen/4196_140915091053_1.jpg)
+![](http://chencan.github.io/attachment/iOS_multi_screen/4196_140915091053_1.jpg)
 
 Good sample相比Bad sample，将上部分的空间都等比例放大了。
 
@@ -118,7 +118,7 @@ UIImage *image = [UIImage imageNamed:imageName];
 
 ###参考
 [Adaptive your user interface](https://developer.apple.com/design/adaptivity/)  
-[poster_iphones](/attachment/poster_iphones.pdf)  
+[poster_iphones](http://chencan.github.io/attachment/poster_iphones.pdf)  
 [iPhone 6/6 Plus 出现后，如何改进工作流以实现一份设计稿支持多个尺寸？](http://www.cocoachina.com/design/20140915/9617.html)  
 [Beginning Auto Layout Tutorial in iOS 7: Part 1](http://www.raywenderlich.com/50317/beginning-auto-layout-tutorial-in-ios-7-part-1)  
 [Beginning Auto Layout Tutorial in iOS 7: Part 2](http://www.raywenderlich.com/50317/beginning-auto-layout-tutorial-in-ios-7-part-2)  
