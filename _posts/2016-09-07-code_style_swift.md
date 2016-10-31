@@ -400,8 +400,6 @@ class BoardLocation {
 
 ### Computed Properties
 
-For conciseness, if a computed property is read-only, omit the get clause. The get clause is required only when a set clause is provided.
-
 Computed property一般是只读，同时省略get clause。get clause只是当set clause存在时才需要写。
 
 
@@ -474,8 +472,6 @@ UIView.animateWithDuration(1.0,
 }
 ```
 
-For single-expression closures where the context is clear, use implicit returns:
-
 只有一个表达式的、用来返回值的闭包，可以省略return。
 
 ```swift
@@ -511,7 +507,7 @@ let widthString: NSString = width.stringValue        // NSString
 
 **Tip:** 有一个办法能达到上面的目的，就是自己只写let，让编译器帮你确定哪些需要改成var。
 
-You can define constants on a type rather than an instance of that type using type properties. To declare a type property as a constant simply use `static let`. Type properties declared in this way are generally preferred over global constants because they are easier to distinguish from instance properties. Example:
+使用`static let`定义类常量，而不是实例常量，或者全局常量。
 
 **Preferred:**
 
@@ -524,7 +520,7 @@ enum Math {
 radius * Math.pi * 2 // circumference
 
 ```
-**Note:** The advantage of using a case-less enumeration is that it can't accidentally be instantiated and works as a pure namespace.
+**Note:** 使用枚举定义常量的好处是让常量定义在特定的命名空间。
 
 **Not Preferred:**
 
