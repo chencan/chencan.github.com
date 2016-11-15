@@ -234,12 +234,13 @@ As seen here:
 * 缩进使用4个空格（Xcode默认）。
 * 操作符左右留空格。
 
-**Preferred:**
+**Preferred:**  
 ```objc
 if (self.changeEable && self.shouldChange)
 sum = count1 + count2
 ```
-**Not Preferred:**
+
+**Not Preferred:**  
 ```objc
 if (self.changeEable&&self.shouldChange)
 sum=count1+count2
