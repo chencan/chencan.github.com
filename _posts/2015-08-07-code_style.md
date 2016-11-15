@@ -238,14 +238,14 @@ As seen here:
 
 ```objc
 if (self.changeEable && self.shouldChange)
-sum = count1 + count2
+    sum = count1 + count2
 ```
 
 **Not Preferred:**  
 
 ```objc
 if (self.changeEable&&self.shouldChange)
-sum=count1+count2
+    sum=count1+count2
 ```
 
 * **方法体的花括号需要在新的一行开启，在新的一行关闭**。而其它花括号(`if`/`else`/`switch`/`while` etc.)，加入一个空格后在行尾开启，在新一行关闭（Xcode默认）。
