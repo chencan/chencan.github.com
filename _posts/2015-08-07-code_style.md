@@ -73,12 +73,12 @@ Podfile.lock 有变动表示使用的第三库版本有变化，如果采用新�
 
 #### Cocoapods使用规范
 * pod update命令，由小组某个成员，开启定时任务：  
-  30 12 * * 1 cd /Users/Can/Workspace/zuche;pod update;  
+  30 12 * * 1 cd /Users/Can/Workspace/project_name;pod update;  
   //用来检查第三方库是否有更新，并升级库。这个是为了定期检查第三方库是否有新版本。  
   //一个小组成员做这件事就可以       
   //发现Podfile.lock变了，表示第三方代码版本升级了，应该了解一下升级的内容，另外上线前不要轻易升级影响功能第三方代码  
 * pod install命令，由小组其他成员，开启定时任务：  
-  30 12 * * * cd /Users/Can/Workspace/zuche;pod install;  
+  30 12 * * * cd /Users/Can/Workspace/project_name;pod install;  
   //主要用来Updating local specs repositories，防止install失败  
 * pull完代码推荐使用pod install，pod install --no-repo-update，后者速度更快可能会报错
 * git checkout 老代码，推荐使用pod install --no-repo-update，因为是老代码，一般不会报错
@@ -227,7 +227,7 @@ Preferences->Text Editing->Page Guide at column:
 ```
 
 As seen here:
-![Xcode Page Guide Pref](http://mix-pub-dist.s3-website-us-west-1.amazonaws.com/objective-c-style-guide/img/pref_page_guide_sm-2.png)
+![Xcode Page Guide Pref](http://upload-images.jianshu.io/upload_images/2924657-21e6784a8da145cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 <h2 id="spacing">Spacing</h2>
 
@@ -283,7 +283,8 @@ else
   // Do something else
 }
 ```
-* methods之间只留一个空行。
+
+* methods之间只留一个空行。
 * 尽量使用auto-synthesis。如果需要使用`@synthesize`，每个property需要新开一行， `@dynamic`也是需要新开一行。
 * 当methods里面需要传入block时，不要使用冒号对齐对方式：
 
@@ -756,7 +757,8 @@ typedef enum {
 typedef enum {
     PlayerStateOff,
     PlayerStatePlaying,
-    PlayerStatePaused} PlayerState;
+    PlayerStatePaused
+} PlayerState;
 ```
 
 <h2 id="switch-statements-and-case-label-blocks">Switch Statements and Case Label Blocks</h2>
@@ -972,7 +974,8 @@ result = isHorizontal ? x : y;
   BOOL continuousPlayEnabled = [[MediaAppPrefs sharedInstance] continuousPlay];
   MediaAppTrack *nextMediaTrack = [MediaAppPlayer nextTrack];
   
-  return (continuousPlayEnabled && nextMediaTrack);}  
+  return (continuousPlayEnabled && nextMediaTrack);
+}  
 ```
 
 **Not Preferred:**
@@ -980,7 +983,8 @@ result = isHorizontal ? x : y;
 ```objc
 - (BOOL) playNext
 {
-  return ([[MediaAppPrefs sharedInstance] continuousPlay] && [MediaAppPlayer nextTrack]);}  
+  return ([[MediaAppPrefs sharedInstance] continuousPlay] && [MediaAppPlayer nextTrack]);
+}  
 ```
 
 
