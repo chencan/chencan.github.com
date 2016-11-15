@@ -235,12 +235,14 @@ As seen here:
 * 操作符左右留空格。
 
 **Preferred:**  
+
 ```objc
 if (self.changeEable && self.shouldChange)
 sum = count1 + count2
 ```
 
 **Not Preferred:**  
+
 ```objc
 if (self.changeEable&&self.shouldChange)
 sum=count1+count2
